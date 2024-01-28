@@ -19,7 +19,7 @@ namespace Labb3_Theo
             var SubMenu = Console.ReadLine();
             if (SubMenu == "1")
             {
-                var Students = context.Students.Where(p => p.Namn != null).OrderBy(p => p.Namn);
+                var Students = context.Students.Where(p => p.Namn != null).OrderBy(p => p.Namn); 
 
                 foreach (Student p in Students)
                 {
